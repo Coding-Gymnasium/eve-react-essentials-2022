@@ -10,7 +10,7 @@
       src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
       crossorigin
     ></script>
-    <script src='https://unpkg.com/babel-standalone@6/babel.min.js'></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
     <title>React ⚛️</title>
   </head>
@@ -19,11 +19,17 @@
     <div id="root"></div>
 
     <script type="text/babel">
+      let robot = "🤖";
+      let cowboy = "🤠";
+      let moon = "🌝";
+      let name = "React";
       ReactDOM.render(
         <ul>
-          <li>🤖</li>
-          <li>🤠</li>
-          <li>🌝</li>
+          <li>{robot}</li>
+          <li>{cowboy}</li>
+          <li>{moon}</li>
+          <li>{name.toUpperCase()}</li>
+          <li>{name.length}</li>
         </ul>,
         document.getElementById("root")
       );
