@@ -33,13 +33,16 @@
         );
       }
 
-      ReactDOM.render(
-        <div>
-          <Header />
-          <Main />
-        </div>,
-        document.getElementById("root")
-      );
+      function App() {
+        return (
+          <div>
+            <Header />
+            <Main />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
     </script>
   </body>
 </html>
